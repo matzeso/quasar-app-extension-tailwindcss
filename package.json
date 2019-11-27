@@ -1,0 +1,25 @@
+{
+  "name": "quasar-app-extension-tailwindcss",
+  "version": "0.0.1",
+  "description": "Integration of TailwindCSS into Quasar Framework",
+  "author": "Matthias Sondermann <sondermann.m@gmail.com>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matzeso/quasar-app-extension-tailwindcss"
+  },
+  "bugs": "https://github.com/matzeso/quasar-app-extension-tailwindcss/issues",
+  "homepage": "",
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.1.4"
+  }
+}
