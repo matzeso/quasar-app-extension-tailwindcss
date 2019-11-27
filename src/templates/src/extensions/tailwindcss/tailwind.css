@@ -1,0 +1,16 @@
+/**
+ * This is the CSS base class used to generate Tailwind CSS Code
+ */
+<% if (prompts.parts.includes('base')) { %>
+@tailwind base;
+<% } %>
+<% if (prompts.parts.includes('components')) { %>
+@tailwind components;
+<% } %>
+<% if (prompts.parts.includes('utilities')) { %>
+@tailwind utilities;
+<% } %>
+
+
+
+
