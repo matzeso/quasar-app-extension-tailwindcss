@@ -1,5 +1,5 @@
 {
-  "name": "quasar-app-extension-tailwindcss",
+  "name": "@matzeso/quasar-app-extension-tailwindcss",
   "version": "0.0.1",
   "description": "Integration of TailwindCSS into Quasar Framework",
   "author": "Matthias Sondermann <sondermann.m@gmail.com>",
@@ -12,6 +12,15 @@
     "type": "git",
     "url": "https://github.com/matzeso/quasar-app-extension-tailwindcss"
   },
+  "keywords": [
+    "quasar",
+    "quasar framework",
+    "extension",
+    "tailwind",
+    "tailwindcss",
+    "app extension",
+    "matzeso"
+  ],
   "bugs": "https://github.com/matzeso/quasar-app-extension-tailwindcss/issues",
   "homepage": "",
   "engines": {
