@@ -7,23 +7,19 @@
  */
 
 function extendConf (conf) {
-    // make sure my-ext boot file is registered
-    conf.boot.push('~quasar-app-extension-my-component/src/boot/register-my-component.js')
-
     // make sure boot & component files get transpiled
-    conf.build.transpileDependencies.push(/quasar-app-extension-my-component[\\/]src/)
-
+    //conf.build.transpileDependencies.push(/quasar-app-extension-tailwindcss[\\/]src[\\/]extensions[\\/]tailwindcss/)
     // make sure my-ext css goes through webpack to avoid ssr issues
-    conf.css.push('~quasar-app-extension-my-component/src/component/MyComponent.styl')
-
-    // we push to /quasar.conf.js > framework > plugins:
-    // https://quasar.dev/quasar-plugins/app-visibility
-    conf.framework.plugins.push('AppVisibility')
+    conf.css.push('../extensions/tailwindcss/tailwind.css')
 }
 
 module.exports = function (api) {
     api.compatibleWith('quasar', '^1.0.0')
     api.compatibleWith('@quasar/app', '^1.0.0')
+
+    api.chainWebpack((cfg, {isClient, isServer}, api) => {
+
+    })
 
     api.extendQuasarConf(extendConf)
 }
