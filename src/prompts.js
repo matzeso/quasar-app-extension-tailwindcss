@@ -57,7 +57,7 @@ module.exports = function () {
             message: 'Choose which parts of TailwindCSS you want to include',
             choices: [
                 {
-                    name: 'Base',
+                    name: 'Base (might overwrite Quasar defaults)',
                     value: 'base', // value of the answer variable
                     short: 'Base' // Short name displayed after user picks this
                 },
@@ -71,7 +71,8 @@ module.exports = function () {
                     value: 'utilities', // value of the answer variable
                     short: 'Utilities' // Short name displayed after user picks this
                 }
-            ]
+            ],
+            default: ['components', 'utilities']
         }
     ]
 }

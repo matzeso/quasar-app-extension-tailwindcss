@@ -17,8 +17,40 @@ module.exports = function (api) {
     api.compatibleWith('quasar', '^1.0.0')
     api.compatibleWith('@quasar/app', '^1.0.0')
 
-    api.chainWebpack((cfg, {isClient, isServer}, api) => {
+    const purgecss = require('@fullhuman/postcss-purgecss')({
 
+        // Specify the paths to all of the template files in your project
+        content: [
+            api.resolve.src('**/*.html'),
+            api.resolve.src('**/*.vue'),
+        ],
+
+        // Include any special characters you're using in this regular expression
+        defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    })
+
+    api.chainWebpack((cfg, {isClient, isServer}, api) => {
+        const plugins = [
+            require('tailwindcss')(api.resolve.src('extensions/tailwindcss/tailwind.config.js')),
+            require('autoprefixer'),
+        ];
+        if (api.ctx.prod) {
+            plugins.push(purgecss);
+        }
+
+        cfg.module
+            .rule('tailwind')
+                .test(/\.css$/)
+                .include
+                    .add(api.resolve.src('extensions/tailwindcss'))
+                    .end()
+                .use('postcss')
+                    .loader('postcss-loader')
+                    .options({
+                        ident: 'postcss',
+                        plugins: plugins
+                    })
+                    .end()
     })
 
     api.extendQuasarConf(extendConf)
