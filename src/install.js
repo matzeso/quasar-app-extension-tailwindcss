@@ -11,5 +11,5 @@ module.exports = function (api) {
         prompts: api.prompts
     });
 
-    api.onExitLog('Thanks for installing matzeso/tailwindcss. You can change tailwind.config.js according to the official documentation.');
+    api.onExitLog('Thanks for installing tailwindcss. You can change files in src/extensions/tailwindcss folder according to the official documentation.');
 }
