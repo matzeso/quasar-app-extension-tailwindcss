@@ -1,32 +1,38 @@
-Quasar App Extension Title <- change name
+TailwindCSS
 ===
 
-_Be sure to change this readme as appropriate for your app extension._
+_This extension makes it easy to integrate TailwindCSS (https://tailwindcss.com/) into Quasar (https://quasar.dev)._
 
-_Think about the organization of this file and how the information will be beneficial to the user._
-
-> Add a short description of your App Extension. What does it do? How is it beneficial? Why would someone want to use it?
+> The extension is currently in a very early stage. Feel free to test and send PRs/issues along. There are tons of features missing, but feel free to let me know what you would like to see in this plugin.
 
 # Install
 ```bash
-quasar ext add my-ext <- change name
+quasar ext add matzeso/tailwindcss
 ```
 Quasar CLI will retrieve it from NPM and install the extension.
 
 ## Prompts
 
-> If your app extension uses prompts, explain them here, otherwise remove this section.
+- `prefix` string - adds a class prefix to every tailwind class name 
+- `parts` list - decide which parts of tailwind you want to install (`base`, `components`, `utilities`)
 
-# Uninstall
+# Uninstall (todo)
 ```bash
-quasar ext remove my-ext <- change name
+quasar ext remove matzeso/tailwindcss
 ```
 
-# Info
-> Add longer information here that will help the user of your app extension.
+# Features
+- Working `tailwindcss` installation and usage
+- PurgeCSS for production builds
 
-# Other Info
-> Add other information that's not as important to know
+> You can configure the `tailwind.css` and `tailwind.config.js` file in 
+> the `src/extensions/tailwindcss/` folder after installation. 
+> See https://tailwindcss.com/docs/installation/#2-add-tailwind-to-your-css and 
+> https://tailwindcss.com/docs/configuration/
 
-# Donate
-If you appreciate the work that went into this App Extension, please consider [donating to Quasar](https://donate.quasar.dev).
+# Todos
+
+> As a next todo, I want to link the config creation to the internal quasar variables, 
+> thereby removing the necessity to keep two configs up to date
+
+There are still lots of things left to do. Feel free to post feature requests.
