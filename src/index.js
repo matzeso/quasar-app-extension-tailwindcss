@@ -7,9 +7,6 @@
  */
 
 function extendConf (conf) {
-    // make sure boot & component files get transpiled
-    //conf.build.transpileDependencies.push(/quasar-app-extension-tailwindcss[\\/]src[\\/]extensions[\\/]tailwindcss/)
-    // make sure my-ext css goes through webpack to avoid ssr issues
     conf.css.push('../extensions/tailwindcss/tailwind.css')
 }
 
