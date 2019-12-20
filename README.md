@@ -16,11 +16,11 @@ Quasar CLI will retrieve it from NPM and install the extension.
 - `prefix` string - adds a class prefix to every tailwind class name 
 - `parts` list - decide which parts of tailwind you want to install (`base`, `components`, `utilities`)
 
-# Uninstall (todo)
+# Uninstall
 ```bash
 quasar ext remove tailwindcss
 ```
-Further, remove the folder `/src/extensions/tailwindcss` to fully delete all files that were created with this plugin.
+Removes the extension, optionally also the folder `/src/extensions/tailwindcss` to fully delete all files that were created with this plugin.
 
 # Features
 - Working `tailwindcss` installation and usage
