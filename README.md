@@ -3,7 +3,7 @@ TailwindCSS
 
 _This extension makes it easy to integrate TailwindCSS (https://tailwindcss.com/) into Quasar (https://quasar.dev)._
 
-> The extension is currently in a very early stage. Feel free to test and send PRs/issues along. There are tons of features missing, but feel free to let me know what you would like to see in this plugin.
+> The extension is currently in a very early stage. Feel free to test and send PRs/issues along.
 
 # Install
 ```bash
@@ -16,11 +16,11 @@ Quasar CLI will retrieve it from NPM and install the extension.
 - `prefix` string - adds a class prefix to every tailwind class name 
 - `parts` list - decide which parts of tailwind you want to install (`base`, `components`, `utilities`)
 
-# Uninstall (todo)
+# Uninstall
 ```bash
 quasar ext remove tailwindcss
 ```
-Further, remove the folder `/src/extensions/tailwindcss` to fully delete all files that were created with this plugin.
+Removes the extension, optionally also the folder `/src/extensions/tailwindcss` to fully delete all files that were created with this plugin.
 
 # Features
 - Working `tailwindcss` installation and usage
