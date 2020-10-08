@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-tailwindcss",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Integration of TailwindCSS into Quasar Framework",
   "author": "Matthias Sondermann <sondermann.m@gmail.com>",
   "license": "MIT",
