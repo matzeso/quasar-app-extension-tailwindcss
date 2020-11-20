@@ -6,6 +6,16 @@ _This extension makes it easy to integrate TailwindCSS (https://tailwindcss.com/
 > The extension is currently in a very early stage. Feel free to test and send PRs/issues along.
 
 # Install
+The new version of this extension already implements `tailwindcss@^2.0.0`.
+Unfortunately, Tailwind requires `postcss@^8.1.0`, but the newest version of Quasar still uses v7.
+While Quasar still uses v7, you can install the old version of this extension with
+
+```bash
+quasar ext add tailwindcss@^1.0.0
+```
+
+Once v8 is included, install the new version with:
+
 ```bash
 quasar ext add tailwindcss
 ```
@@ -31,9 +41,5 @@ Removes the extension, optionally also the folder `/src/extensions/tailwindcss` 
 > See https://tailwindcss.com/docs/installation/#2-add-tailwind-to-your-css and 
 > https://tailwindcss.com/docs/configuration/
 
-# Todos
-
-> As a next todo, I want to link the config creation to the internal quasar variables, 
-> thereby removing the necessity to keep two configs up to date
-
-There are still lots of things left to do. Feel free to post feature requests.
+# Contributions
+Feel free to send PRs along, or even join as a contributor. 
