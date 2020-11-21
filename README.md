@@ -6,9 +6,18 @@ _This extension makes it easy to integrate TailwindCSS (https://tailwindcss.com/
 > The extension is currently in a very early stage. Feel free to test and send PRs/issues along.
 
 # Install
-The new version of this extension already implements `tailwindcss@^2.0.0`.
-Unfortunately, Tailwind requires `postcss@^8.1.0`, but the newest version of Quasar still uses v7.
-While Quasar still uses v7, you can install the old version of this extension with
+This extension now uses `TailwindCSS v2`.
+
+```bash
+quasar ext add tailwindcss
+```
+
+> We currently use `tailwindcss@^2.0.1-compat`.
+> While TailwindCSS v2 requires `postcss@^8.1.0`,  Quasar still uses v7. We therefore make use of their compatibility version that has the same features as the regular v2, but uses PostCSS v7 instead. As soon as Quasar ships with PostCSS 8, we will switch over to regular TailwindCSS v2.
+
+
+There have been [reports](https://github.com/matzeso/quasar-app-extension-tailwindcss/issues/7) that some part of TailwindCSS v2 breaks with current Quasar rules. 
+In case you encounter difficulties with TailwindCSS v2, you can use v1 by installing the extension like this:
 
 ```bash
 quasar ext add tailwindcss@^1.0.0
@@ -16,9 +25,7 @@ quasar ext add tailwindcss@^1.0.0
 
 Once v8 is included, install the new version with:
 
-```bash
-quasar ext add tailwindcss
-```
+
 Quasar CLI will retrieve it from NPM and install the extension.
 
 ## Prompts
