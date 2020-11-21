@@ -22,9 +22,6 @@ In case you encounter difficulties with TailwindCSS v2, you can use v1 by instal
 quasar ext add tailwindcss@^1.0.0
 ```
 
-Once v8 is included, install the new version with:
-
-
 Quasar CLI will retrieve it from NPM and install the extension.
 
 ## Prompts
