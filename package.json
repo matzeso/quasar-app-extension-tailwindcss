@@ -29,11 +29,10 @@
     "yarn": ">= 1.6.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.0.2",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.8.6",
     "inquirer": "^7.0.0",
-    "postcss": "^8.1.0",
-    "purgecss": "^3.0.0",
-    "tailwindcss": "^2.0.0"
-  },
-  "devDependencies": {}
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+  }
 }
