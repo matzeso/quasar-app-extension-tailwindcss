@@ -44,10 +44,10 @@ module.exports = function (api) {
                     .end()
                 .use('postcss')
                     .loader('postcss-loader')
-                    .options({
+                    .options({postcssOptions: {
                         ident: 'postcss',
                         plugins: plugins
-                    })
+                    }})
                     .end()
     })
 
