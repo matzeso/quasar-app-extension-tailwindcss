@@ -29,7 +29,6 @@
     "yarn": ">= 1.6.0"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^9.8.6",
     "inquirer": "^7.0.0",
     "postcss": "^7.0.35",
