@@ -63,17 +63,17 @@ module.exports = function (api) {
 
         cfg.module
             .rule('tailwind')
-            .test(/\.css$/)
-            .include
-            .add(api.resolve.src('extensions/tailwindcss'))
-            .end()
-            .use('postcss')
-            .loader('postcss-loader')
-            .options({postcssOptions: {
-                    ident: 'postcss',
-                    plugins: plugins
-                }})
-            .end()
+                .test(/\.css$/)
+                .include
+                    .add(api.resolve.src('extensions/tailwindcss'))
+                    .end()
+                .use('postcss')
+                    .loader('postcss-loader')
+                    .options({postcssOptions: {
+                        ident: 'postcss',
+                        plugins: plugins
+                    }})
+                    .end()
     })
 
     api.extendQuasarConf(extendConf)
