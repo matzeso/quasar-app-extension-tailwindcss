@@ -42,7 +42,7 @@ module.exports = function (api) {
         }
 
         // by default, only enable purge on production
-        if (typeof(purgecssConfig) === 'undefined') {
+        if (typeof(purgecssConfig.enabled) === 'undefined') {
             tailwindConfig.purge.enabled = api.ctx.prod;
         }
     } else {
