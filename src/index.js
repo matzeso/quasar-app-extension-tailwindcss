@@ -57,7 +57,7 @@ module.exports = function (api) {
 
     api.chainWebpack((cfg, {isClient, isServer}, api) => {
         const plugins = [
-            require('tailwindcss')(tailwindConfigFile),
+            require('tailwindcss')(tailwindConfig),
             require('autoprefixer'),
         ];
 
