@@ -55,6 +55,8 @@ module.exports = function (api) {
 
     purgecssConfig.defaultExtractor = content => content.match(/[\w-/:]+(?<!:)/g) || [];
 
+    tailwindConfig.purge = purgecssConfig;
+
     api.chainWebpack((cfg, {isClient, isServer}, api) => {
         const plugins = [
             require('tailwindcss')(tailwindConfig),
