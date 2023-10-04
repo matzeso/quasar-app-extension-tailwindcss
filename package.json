@@ -32,7 +32,7 @@
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^9.8.6",
     "inquirer": "^7.0.0",
-    "postcss": "^7.0.35",
+    "postcss": "^8.4.31",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
   }
 }
